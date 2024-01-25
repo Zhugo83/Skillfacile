@@ -1,0 +1,586 @@
+*{
+    margin: 0px;
+}
+/* Margin 0px is always there */
+
+/* TODO: REPLACE button BY a, EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
+/* General below */
+:root{
+    --open-sans: "Open Sans", sans-serif;
+    --oswald: "Oswald", sans-serif;
+    --pacifico: "Pacifico", sans-serif;
+    --colorlightgreen: #30cd8a;
+    --colorpurple: #423B73;
+    --colorlightpink: #e34e67;
+}
+
+button{
+    transition:all 0.2s;
+}
+
+#button1:hover{
+    transition:all 0.2s;
+    color: var(--colorlightgreen);
+    border-color: var(--colorlightgreen);
+    background-color: white;
+}
+
+#button2:hover{
+    transition:all 0.2s;
+    color: white;
+    border-color: white;
+    background-color: var(--colorlightgreen);
+}
+
+a{
+    text-decoration: none;
+    transition:all 0.2s ;
+}
+
+a:hover{
+    transition:all 0.2s;
+}
+
+/* this ul is so helpful for any webside in reality */
+ul{ 
+    list-style: none;
+    padding: 0px;
+}
+
+.width-1920{
+    align-items: center;
+    margin: auto;
+    max-width: 1920px;
+}
+
+.width-1440{
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.padding-up-down{
+    padding: 40px 0px; 
+}
+
+.image-width{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+/* General above*/
+
+/* Header below no touch */
+#burger{
+    display: none;
+}
+header{
+    padding: 70px 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+header img{
+    width: 320px;
+}
+
+header nav ul{
+    display: flex;
+    gap:40px
+}
+
+header nav ul li a{
+    font-size: 16px;
+    font-family: var(--open-sans);
+    font-weight: 600;
+}
+/* Header above no touch */
+
+/* START of section1 */
+main section:nth-child(1) div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+main section:nth-child(1) div article button{
+    border: 1px var(--colorlightgreen) solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    color:white;
+    background-color: var(--colorlightgreen);
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+main section:nth-child(1) div article button:last-child{
+    border: 1px var(--colorlightgreen) solid;
+    border-radius: 10px;
+    padding: 14px 30px;
+    color:var(--colorlightgreen);
+    background-color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+main section:nth-child(1) div > article:nth-child(1){
+    padding: 0px 227px 0px 0px;
+}
+
+main section:nth-child(1) div article h1{
+    color: var(--colorlightpink);
+    font-size: 23px;
+    font-weight: 400;
+    font-family: var(--pacifico);
+}
+
+main section:nth-child(1) div article h2{
+    color: var(--colorpurple);
+    font-size: 38px;
+    font-weight: 700;
+    font-family: var(--oswald);
+}
+
+main section:nth-child(1) div article p{
+    color: var(--colorpurple);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    margin-bottom: 20px;
+}
+/* END of section1 */
+
+/* START of section2 */
+main section:nth-child(2){
+    background-color: #1E1D31;
+    padding: 80px 0px;
+}
+
+main section:nth-child(2) > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+}
+
+main section:nth-child(2) > div button {
+    margin: auto;
+}
+
+main section:nth-child(2) div article {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+main section:nth-child(2) div article button{
+    font-family: var(--open-sans);
+    font-size: 16px;
+    color: var(--colorlightgreen);
+    background-color: #1E1D31;
+    border-radius: 10px;
+    border: solid 1px var(--colorlightgreen);
+    padding: 13px 30px;
+}
+
+main section:nth-child(2) div article:nth-child(5){
+grid-column: 1/3;
+}
+
+/* PADDING 🔥🔥 */
+main section:nth-child(2) div article div{
+    padding: 0px 0px 60px 0px;
+}
+
+main section:nth-child(2) div article div img{
+    padding: 0px 20px 6px 0px;
+}
+
+main section:nth-child(2) div article div:nth-child(2){
+    padding: 8px, 0px, 0px, 0px;
+}
+/* END of PADDING 🔥🔥 */
+
+main section:nth-child(2) div article div h3{
+    color: var(--colorlightgreen);
+    font-size: 16px;
+    font-family: var(--oswald);
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+main section:nth-child(2) div article div p{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+}
+/* END of section2 */
+
+/* START of section3 */
+main section:nth-child(3) div article > h1{
+    color: var(--colorlightpink);
+    font-size: 23px;
+    font-weight: 400;
+    font-family: var(--pacifico);
+}
+
+main section:nth-child(3) div article > h2{
+    color: var(--colorpurple);
+    font-size: 38px;
+    font-weight: 700;
+    font-family: var(--oswald);
+}
+
+main section:nth-child(3) div article > h3{
+    color: var(--colorpurple);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--oswald);
+}
+
+main section:nth-child(3) div article p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+}
+
+/* what the fuck and how the fuck is it still working, there's NOT 4 P, THERE'S 2?! */
+/* FIX LATER */
+main section:nth-child(3) div article:nth-child(2) p:nth-child(4),
+main section:nth-child(3) div article:nth-child(3) p:nth-child(4){
+    background-color: #1e1d31;
+    border-radius: 24px;
+    padding: 40px;
+    color: white;
+}
+
+main section:nth-child(3) div article:nth-child(1) p:nth-child(3){
+    color: var(--colorpurple);
+}
+
+main section:nth-child(3) div article:nth-child(2) p:nth-child(3),
+main section:nth-child(3) div article:nth-child(3) p:nth-child(3){
+    color: var(--colorlightgreen);
+}
+
+main section:nth-child(3) div article:nth-child(2),
+main section:nth-child(3) div article:nth-child(3){
+    padding: 31px;
+} 
+
+
+main section:nth-child(3) div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section:nth-child(3) div article:nth-child(1){
+    grid-column: 1/3;
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+}
+/* END of section3 */
+
+/* START of section4 */
+main section:nth-child(4) div article > h1{
+    color: var(--colorlightpink);
+    font-size: 23px;
+    font-weight: 400;
+    font-family: var(--pacifico);
+}
+
+main section:nth-child(4) div article > h2{
+    color: var(--colorpurple);
+    font-size: 38px;
+    font-weight: 700;
+    font-family: var(--oswald);
+}
+
+main section:nth-child(4) div article > p{
+    color: var(--colorpurple);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+}
+
+main section:nth-child(4) div{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+main section:nth-child(4) div article:nth-child(1){
+    grid-column: 1/3;
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+}
+
+main section:nth-child(4) div article:nth-child(2),
+main section:nth-child(4) div article:nth-child(3){
+    padding: 50px 0px 0px 0px;
+}
+
+main section:nth-child(4) div article:nth-child(2){
+    padding: 48px 40px 40px 40px;
+    border-radius: 24px 0px 0px 24px;
+    gap: 16px;
+    border: 1px solid #1E1D31;
+    background-color: #1E1D31;
+}
+
+main section:nth-child(4) div article:nth-child(2) h3{
+    color: var(--colorlightgreen);
+    font-family: var(--oswald);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+main section:nth-child(4) div article:nth-child(2) ul li{
+    color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+main section:nth-child(4) div article:nth-child(2) ul li::before{
+    content: url('../img/icon.png');
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+main section:nth-child(4) div button{
+    padding: 14px 31px;
+    border-radius: 10px;
+    border: 1px var(--colorlightgreen) solid;
+    color: white;
+    background-color: var(--colorlightgreen);
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+/* END of section4 */
+
+/* START of section5 (where he realise he fucked up the entire html or css 😭) */
+main section:nth-child(5) div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section:nth-child(5) div article:nth-child(1),
+main section:nth-child(5) div article:nth-child(2){
+    padding: 50px 0px 0px 0px;
+}
+
+
+main section:nth-child(5) div article:nth-child(2){
+    padding: 48px 40px 40px 40px;
+    border-radius: 24px 0px 0px 24px;
+    gap: 16px;
+    border: 1px solid #1E1D31;
+    background-color: #1E1D31;
+}
+
+main section:nth-child(5) div article:nth-child(2) h3{
+    color: var(--colorlightgreen);
+    font-family: var(--oswald);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+main section:nth-child(5) div article:nth-child(2) ul li{
+    color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+main section:nth-child(5) div article:nth-child(2) ul li::before{
+    content: url('../img/icon.png');
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+main section:nth-child(5) div button{
+    padding: 14px 31px;
+    border-radius: 10px;
+    border: 1px var(--colorlightgreen) solid;
+    color: var(--colorlightgreen);
+    background-color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+/* END section5 */
+
+/* START section6 */
+main section:nth-child(6) div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+main section:nth-child(6) div article:nth-child(1){
+    padding: 0px 227px 0px 0px;
+}
+
+main section:nth-child(6) div article:nth-child(1) > h1{
+    color: var(--colorlightpink);
+    font-size: 23px;
+    font-weight: 400;
+    font-family: var(--pacifico);
+}
+
+main section:nth-child(6) div article:nth-child(1) > h2{
+    color: var(--colorpurple);
+    font-size: 38px;
+    font-weight: 700;
+    font-family: var(--oswald);
+}
+
+main section:nth-child(6) div article:nth-child(1) > p{
+    color: var(--colorpurple);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+}
+
+main section:nth-child(6) div article:nth-child(2){
+    color: white;
+}
+
+main section:nth-child(6) div article:nth-child(2) > h2{
+    text-align: center;
+}
+
+main section:nth-child(6) div article:nth-child(2) form input{
+    display: block;
+}
+
+main section:nth-child(6) div article:nth-child(2) form textarea{
+    display: block;
+}
+
+main section:nth-child(6) div article:nth-child(2) form input[type="checkbox"] {
+        float: left; /* Float the checkbox to the left */
+        margin-right: 5px; /* Add some margin to separate the checkbox from the text */
+}
+/* END of section6 */
+/* DIE!!!!! */
+/* Footer */
+footer > p{
+    color: var(--colorpurple);
+    background-color: #EFEFEF;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: var(--open-sans);
+}
+
+footer > p > a:hover{
+    color: red;
+}
+
+footer > p > a{
+    color: var(--colorpurple);
+}
+footer div article{
+    padding: 30px;
+}
+
+footer div{
+    background-color: #363450;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+
+footer div article p{
+    color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+footer div article h3{
+    color: white;
+    padding: 0px 0px 20px 0px;
+    font-family: var(--oswald);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+footer div article ul{
+    list-style: none;
+    padding: 0px;
+}
+
+footer div article ul li{
+    padding: 10px 0px 10px 0px;
+}
+
+footer div article ul li a{
+    color: white;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+footer div article ul li a:hover{
+    color: var(--colorlightgreen);
+}
+
+@media screen and (max-width: 1024px){
+    nav{
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+}
