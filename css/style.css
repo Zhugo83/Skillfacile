@@ -3,8 +3,6 @@
 }
 /* Margin 0px is always there */
 
-/* TODO: REPLACE button BY a, EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-
 /* General below */
 :root{
     --open-sans: "Open Sans", sans-serif;
@@ -13,10 +11,6 @@
     --colorlightgreen: #30cd8a;
     --colorpurple: #423B73;
     --colorlightpink: #e34e67;
-}
-
-button{
-    transition:all 0.2s;
 }
 
 #button1:hover{
@@ -140,7 +134,7 @@ main section:nth-child(1) div{
     padding: 100px 10px;
 }
 
-main section:nth-child(1) div article button{
+main section:nth-child(1) div article a{
     border: 1px var(--colorlightgreen) solid;
     border-radius: 10px;
     padding: 14px 30px;
@@ -155,7 +149,7 @@ main section:nth-child(1) div article button{
 
 }
 
-main section:nth-child(1) div article button:last-child{
+main section:nth-child(1) div article a:last-child{
     border: 1px var(--colorlightgreen) solid;
     border-radius: 10px;
     padding: 14px 30px;
@@ -208,7 +202,7 @@ main section:nth-child(2) > div{
     padding: 30px;
 }
 
-main section:nth-child(2) > div button {
+main section:nth-child(2) > div a {
     margin: auto;
 }
 
@@ -218,7 +212,7 @@ main section:nth-child(2) div article {
     padding: 30px;
 }
 
-main section:nth-child(2) div article button{
+main section:nth-child(2) div article a{
     font-family: var(--open-sans);
     font-size: 16px;
     color: var(--colorlightgreen);
@@ -411,7 +405,7 @@ main section:nth-child(4) div article:nth-child(2) ul li::before{
     top: 4px;
 }
 
-main section:nth-child(4) div button{
+main section:nth-child(4) div a{
     padding: 14px 31px;
     border-radius: 10px;
     border: 1px var(--colorlightgreen) solid;
@@ -473,7 +467,7 @@ main section:nth-child(5) div article:nth-child(2) ul li::before{
     top: 4px;
 }
 
-main section:nth-child(5) div button{
+main section:nth-child(5) div a{
     padding: 14px 31px;
     border-radius: 10px;
     border: 1px var(--colorlightgreen) solid;
