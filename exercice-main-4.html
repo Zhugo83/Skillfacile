@@ -110,7 +110,7 @@
                 </article>
                 <article>
                     <div>
-                        <img src="img/JL.png" alt="Jean louis pfp"> <!-- Good pfp placement? -->
+                        <img src="img/JL.png" alt="Jean louis pfp">
                         <article>
                             <h3>Jean-Louis ERRANTE</h3>
                             <p>Formateur, coach, chef de projet</p>
@@ -122,7 +122,7 @@
                 </article>
                 <article>
                     <div>
-                        <img src="img/Vincent.png" alt="Vincent pfp"> <!-- Same here? -->
+                        <img src="img/Vincent.png" alt="Vincent pfp">
                         <article>
                             <h3>Vincent ERRANTE</h3>
                             <p>Formateur, coach, chef de projet</p>
@@ -186,21 +186,25 @@
                     clientèle prendra contact avec vous rapidement pour discuter de
                     votre projet.</p>
                 </article>
-                <article style="background-color: black;">
+                <article style="background-color: #1e1d31; border-radius: 24px; padding: 20px;">
                     <h2>Contactez-nous</h2>
                     <form action="">
-                        <div>
-                            <input type="text" placeholder="Votre nom et prénom">
-                            <input type="text" placeholder="Votre numéro de téléphone">
-                        </div>
-                        <input type="text" placeholder="Le nom de votre entreprise">
-                        <input type="text" placeholder="Votre adress mail">
-                        <textarea type="text" placeholder="Précisez votre demande afin de faciliter l'échange lorsqu'un de nos conseillers vous appellera"></textarea>
-                        <input type="checkbox", name="test"> 
-                        <label name="test">En soumettant ce formulaire, j'accepte que les informations saisies soient transmises par mail à l'équipe de SkillFacile dans le but d'être recontacté concernant la demande effectuée. Je comprends que j'ai un droit de modification, d'accès et de suppression de mes informations personnelles.</label>
-                        <input type="submit">
+                        <!-- This form is haunting my nightmares -->
+                            <input type="text" id="full name" placeholder="Votre nom et prénom">
+                            <input type="text" id="phone number" placeholder="Votre numéro de téléphone">
+                            <input class="lol" type="text" id="company name" placeholder="Le nom de votre entreprise">
+                            <input class="lol" type="email" id="email" placeholder="Votre adress mail">
+                            <select class="lol" name="askingwhat" id="info">
+                                <option value="accompagnement perso">Je veux des reseignements concernant l'acompagnement perso</option>
+                                <option value="accompagnement small group">Je veux des renseignements concernant l'accompagnement small group</option>
+                                <option value="formation digitale">Je veux des renseignements concernant la formation digitale</option>
+                                <option value="coaching digital">Je veux des renseignements concernant le coaching digital</option>
+                                <option value="Other">J'ai une autre demande</option>
+                            </select>
+                            <textarea class="lol" type="text" id="request" placeholder="Précisez votre demande afin de faciliter l'échange lorsqu'un de nos conseillers vous appellera"></textarea>             
+                            <label class="lol" for="know rights"><input type="checkbox", id="know rights"> En soumettant ce formulaire, j'accepte que les informations saisies soient transmises par mail à l'équipe de SkillFacile dans le but d'être recontacté concernant la demande effectuée. Je comprends que j'ai un droit de modification, d'accès et de suppression de mes informations personnelles.</label>
+                            <input id="submit" type="submit">
                     </form>
-                    
                 </article>
             </div>
         </section>
