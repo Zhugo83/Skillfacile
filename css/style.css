@@ -104,6 +104,32 @@ header nav ul li a{
     font-family: var(--open-sans);
     font-weight: 600;
 }
+
+header nav > ul > li:nth-child(4) > a{
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+}
+.dropdown-child a {
+    padding-bottom: 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+header nav ul li a:hover{
+    color: var(--colorlightgreen);
+    transition:all 0.2s;
+}
 /* Header above no touch */
 
 /* START of section1 */
@@ -111,7 +137,7 @@ main section:nth-child(1) div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    padding: 10px;
+    padding: 100px 10px;
 }
 
 main section:nth-child(1) div article button{
@@ -240,6 +266,10 @@ main section:nth-child(2) div article div p{
 /* END of section2 */
 
 /* START of section3 */
+main section:nth-child(3){
+    padding: 50px 0px
+}
+
 main section:nth-child(3) div article > h1{
     color: var(--colorlightpink);
     font-size: 23px;
@@ -330,6 +360,7 @@ main section:nth-child(4) div article > p{
 main section:nth-child(4) div{
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
+    padding: 120px 0px;
 }
 
 main section:nth-child(4) div article:nth-child(1){
@@ -397,6 +428,7 @@ main section:nth-child(4) div button{
 main section:nth-child(5) div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 120px 0px;
 }
 
 main section:nth-child(5) div article:nth-child(1),
