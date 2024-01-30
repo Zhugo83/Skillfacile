@@ -11,6 +11,7 @@
     --colorlightgreen: #30cd8a;
     --colorpurple: #423B73;
     --colorlightpink: #e34e67;
+    --colorwhite: #fff;
 }
 
 #button1, #button2{
@@ -19,25 +20,32 @@
 }
 
 #button1:hover{
-    transition:all 0.2s;
     color: var(--colorlightgreen);
     border-color: var(--colorlightgreen);
-    background-color: white;
+    background-color: var(--colorwhite);
 }
 
 #button2:hover{
-    transition:all 0.2s;
-    color: white;
-    border-color: white;
+    color: var(--colorwhite);
+    border-color: var(--colorwhite);
     background-color: var(--colorlightgreen);
 }
 
-a{
+#submit:hover{
+    border-color: #c44240;
+    background-color: #c44240;
+}
+
+a,
+#submit{
     text-decoration: none;
     transition:all 0.2s ;
 }
 
-a:hover{
+a:hover,
+#button1:hover,
+#button2:hover,
+#submit:hover{
     transition:all 0.2s;
 }
 
@@ -47,20 +55,10 @@ ul{
     padding: 0px;
 }
 
-.width-1920{
-    align-items: center;
-    margin: auto;
-    max-width: 1920px;
-}
-
 .width-1440{
     align-items: center;
     margin: auto;
     max-width: 1440px;
-}
-
-.padding-up-down{
-    padding: 40px 0px; 
 }
 
 .image-width{
@@ -144,15 +142,13 @@ main section:nth-child(1) div article a{
     border: 1px var(--colorlightgreen) solid;
     border-radius: 10px;
     padding: 14px 30px;
-    color:white;
+    color:var(--colorwhite);
     background-color: var(--colorlightgreen);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0em;
-    text-align: center;
-
 }
 
 main section:nth-child(1) div article a:last-child{
@@ -160,13 +156,12 @@ main section:nth-child(1) div article a:last-child{
     border-radius: 10px;
     padding: 14px 30px;
     color:var(--colorlightgreen);
-    background-color: white;
+    background-color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0em;
-    text-align: center;
 }
 
 main section:nth-child(1) div > article:nth-child(1){
@@ -248,7 +243,7 @@ main section:nth-child(2) div article div h3{
 }
 
 main section:nth-child(2) div article div p{
-    color: white;
+    color: var(--colorwhite);
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -294,7 +289,7 @@ main section:nth-child(3) > div > article:nth-child(3) > p{
     background-color: #1e1d31;
     border-radius: 24px;
     padding: 40px;
-    color: white;
+    color: var(--colorwhite);
 }
 
 main section:nth-child(3) div article:nth-child(1) p:nth-child(3){
@@ -390,7 +385,7 @@ main section:nth-child(4) div article:nth-child(2) h3{
 }
 
 main section:nth-child(4) div article:nth-child(2) ul li{
-    color: white;
+    color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 400;
@@ -411,7 +406,7 @@ main section:nth-child(4) div a{
     padding: 14px 31px;
     border-radius: 10px;
     border: 1px var(--colorlightgreen) solid;
-    color: white;
+    color: var(--colorwhite);
     background-color: var(--colorlightgreen);
     font-family: var(--open-sans);
     font-size: 16px;
@@ -457,7 +452,7 @@ main section:nth-child(5) div article:nth-child(2) h3{
 }
 
 main section:nth-child(5) div article:nth-child(2) ul li{
-    color: white;
+    color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 400;
@@ -479,7 +474,7 @@ main section:nth-child(5) div a{
     border-radius: 10px;
     border: 1px var(--colorlightgreen) solid;
     color: var(--colorlightgreen);
-    background-color: white;
+    background-color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 600;
@@ -529,7 +524,7 @@ main section:nth-child(6) div article:nth-child(2) form label{
     padding: 14px 31px;
     border-radius: 10px;
     border: 1px var(--colorlightgreen) solid;
-    color: white;
+    color: var(--colorwhite);
     background-color: var(--colorlightgreen);
     font-family: var(--open-sans);
     font-size: 16px;
@@ -544,7 +539,7 @@ textarea, input, select{
     font-size: 16px;
     font-family: var(--open-sans);
     padding: 10px;
-    color: white;
+    color: var(--colorwhite);
 }
 
 textarea{
@@ -582,7 +577,7 @@ main section:nth-child(6) div article:nth-child(1) > p{
 }
 
 main section:nth-child(6) div article:nth-child(2){
-    color: white;
+    color: var(--colorwhite);
 }
 
 main section:nth-child(6) div article:nth-child(2) > h2{
@@ -598,7 +593,7 @@ main section:nth-child(6) div article:nth-child(2) form input[type="checkbox"] {
 /* Footer */
 footer > p{
     color: var(--colorpurple);
-    background-color: white;
+    background-color: var(--colorwhite);
     padding: 15px;
     text-align: center;
     font-size: 16px;
@@ -626,14 +621,14 @@ footer div{
 }
 
 footer div article p{
-    color: white;
+    color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 footer div article h3{
-    color: white;
+    color: var(--colorwhite);
     padding: 0px 0px 20px 0px;
     font-family: var(--oswald);
     font-size: 16px;
@@ -651,7 +646,7 @@ footer div article ul li{
 }
 
 footer div article ul li a{
-    color: white;
+    color: var(--colorwhite);
     font-family: var(--open-sans);
     font-size: 16px;
     font-weight: 400;
