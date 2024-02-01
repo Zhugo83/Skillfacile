@@ -270,7 +270,7 @@ main section:nth-child(3) div article > h2{
     font-family: var(--oswald);
 }
 
-main section:nth-child(3) div article > h3{
+main section:nth-child(3) div article h3{
     color: var(--colorpurple);
     font-size: 24px;
     font-weight: 700;
@@ -296,18 +296,20 @@ main section:nth-child(3) div article:nth-child(1) p:nth-child(3){
     color: var(--colorpurple);
 }
 
-main section:nth-child(3) div article:nth-child(2) div article p,
-main section:nth-child(3) div article:nth-child(3) div article p{
+main section:nth-child(3) div article:nth-child(2) div div p,
+main section:nth-child(3) div article:nth-child(3) div div p{
     color: var(--colorlightgreen);
 }
 
 main section:nth-child(3) div article:nth-child(2),
-main section:nth-child(3) div article:nth-child(3){
+main section:nth-child(3) div article:nth-child(3),
+main section:nth-child(3) div article:nth-child(2) div div,
+main section:nth-child(3) div article:nth-child(3) div div{
     padding: 31px;
 } 
 
 
-main section:nth-child(3) div{
+main section:nth-child(3) > div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -514,6 +516,12 @@ main section:nth-child(6) div article:nth-child(2) form label{
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+main section:nth-child(6) div article:nth-child(2){
+    background-color: #1e1d31; 
+    border-radius: 24px; 
+    padding: 20px;
 }
 
 .lol{
